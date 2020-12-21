@@ -10,7 +10,7 @@ namespace BlazorUnitTest
         public void TestDivide()
         {
             var common = new Commom();
-            Assert.Equal(1, common.Divide(1,1));
+            Assert.Equal(3, common.Divide(1,2));
         }
 
         [Fact]
