@@ -22,7 +22,9 @@ namespace BlazorTest
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseIISIntegration()
+                    .UseContentRoot(Directory.GetCurrentDirectory())
+                    .UseStartup<Startup>();
                 });
     }
 }
